@@ -3,6 +3,9 @@ module.exports = {
     darkMode: "",
     plugins: [require('@tailwindcss/typography')],
     theme: {
+        container: {
+            center: true,
+        },
         extend: {},
     },
 };

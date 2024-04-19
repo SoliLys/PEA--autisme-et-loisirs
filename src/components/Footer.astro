@@ -1,7 +1,10 @@
 ---
 
-import Button from "./Button.astro";---
+import Button from "./Button.astro";
+import Puzzle from "./Puzzle.astro";
+---
+
 <div class="grid grid-cols-2 place-items-center content-center">
-    <Button>Sources</Button>
-    <Button>Presentation des membres</Button>
+    <a href="/PEA--autisme-et-loisirs/sources"><Puzzle forme="2" className="w-32 rotate-3 fill-orange-500">Sources</Puzzle></a>
+    <a href="/PEA--autisme-et-loisirs/equipe"><Puzzle forme="1" className="w-32 rotate-6 fill-purple-500">Presentation des membres</Puzzle></a>
 </div>

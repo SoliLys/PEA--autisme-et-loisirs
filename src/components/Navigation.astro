@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import logoImage from "../assets/logo.png";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
 <header>
@@ -12,6 +14,6 @@ import logoImage from "../assets/logo.png";
                 <h1 class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">Autisme et loisirs</h1>
             </a>
         </div>
-        <a href="/PEA--autisme-et-loisirs/">⬅</a>
+        <a href="/PEA--autisme-et-loisirs/" class={currentPath === "PEA--autisme-et-loisirs/" ? "hidden" : ""} >⬅</a>
     </nav>
 </header>
