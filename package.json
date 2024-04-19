@@ -1,0 +1,36 @@
+{
+  "name": "hilarious-hubble",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/mdx": "^2.3.0",
+    "@astrojs/sitemap": "^3.1.2",
+    "@astrojs/tailwind": "^5.1.0",
+    "@icon/heroicons-outline": "^0.4.2-alpha.0",
+    "@iconify-json/heroicons": "^1.1.20",
+    "@iconify-json/heroicons-outline": "^1.1.10",
+    "@types/canvas-confetti": "^1.6.3",
+    "astro": "^4.5.12",
+    "astro-color-scheme": "^1.1.2",
+    "astro-favicons": "^2.0.2",
+    "astro-icon": "^1.1.0",
+    "astro-robots-txt": "^1.0.0",
+    "autoprefixer": "^10.4.15",
+    "canvas-confetti": "^1.9.1",
+    "heroicons-astro": "^1.0.4",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.12"
+  }
+}

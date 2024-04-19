@@ -1,0 +1,32 @@
+---
+// Component Imports
+import Puzzle from "../components/Puzzle.astro";
+import Page from "../layouts/main.astro";
+
+const content = {
+    title: "Autisme et loisirs"
+}
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<Page content={content}>
+	<div class="grid grid-cols-3 place-items-center content-center">
+		<a href="/pea" class="p-2 text-base">
+			<Puzzle forme="1" className="w-72 fill-yellow-500"><h2>Présentation du PEA</h2></Puzzle>
+		</a>
+		<a href="/autisme" class="p-2 text-base">
+			<Puzzle forme="2" className="w-72 fill-green-500"><h2>Qu'est ce que l'autisme&nbsp;?</h2></Puzzle>
+		</a>
+		<a href="/orientation" class="p-2 text-base">
+			<Puzzle forme="3" className="w-72 fill-red-500"><h2>Où s'orienter&nbsp;?</h2></Puzzle>
+		</a>
+		<a href="/loisirs" class="p-2 text-base">
+			<Puzzle forme="1" className="w-72 fill-blue-500"><h2>Activités/Loisirs</h2></Puzzle>
+		</a>
+		<a href="/psycomotricite" class="p-2 text-base">
+			<Puzzle forme="5" className="w-72 fill-pink-500"><h2>Psychomotricité</h2></Puzzle>
+		</a>
+	</div>
+</Page>
