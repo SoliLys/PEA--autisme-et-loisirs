@@ -35,5 +35,6 @@ export default defineConfig({
 
     //....
   }), mdx()],
-  site: 'https://autismeetloisirs-pea.altergi.fr'
+  site: 'https://solilys.github.io',
+  base: 'PEA--autisme-et-loisirs'
 });
