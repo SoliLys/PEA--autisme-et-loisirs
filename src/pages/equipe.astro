@@ -13,91 +13,83 @@ const content = {
 
 <Page content={content}>
 
-    ![mot](/PEA--autisme-et-loisirs/images/photo-marine.png)
-    Marine, étudiante en troisième année de psychomotricité à l’ISRP. À l’initiative de ce site et à engager des gens assez fou  pour me suivre mes idées un peu dingue
-    ---
+    <style>
+        .masked-image {
+            mask-image: url('/PEA--autisme-et-loisirs/images/puzzle/1.svg');
+            -webkit-mask-image: url('/PEA--autisme-et-loisirs/images/puzzle/1.svg');
+            mask-repeat: no-repeat;
+            mask-position: center;
+            mask-size: contain;
+            margin: 0 auto;
+            height: auto;
+            width: 256px;
+        }
+    </style>
 
-    ---
-
-    Aurélie, étudiante en 1ère année de Psychomotricité à l’ISRP Paris, je viens tout juste de rejoindre l’équipe ! Ce qui me passionne dans la vie, ce sont les projets passionnants et engagés, le sentiment d’être utile en apportant mon soutien et la pratique régulière du yoga.
-    ---
-
-    ---
-
-    ![mot](/PEA--autisme-et-loisirs/images/photo-maylis.png)
-    Maylis, étudiante en troisième année de psychomotricité à l’ISRP. Je me suis faite embarquée dans cette aventure par Marine. Comme elle le dit je suis assez folle pour réaliser ce site avec toute l’équipe et je me suis investie pour en faire quelque chose de beau. Il est important de lier le quantitatif au qualitatif !
-    ---
-
-    ---
-
-    ![mot](/PEA--autisme-et-loisirs/images/photo-nolwen.png)
-    Nolwen, étudiante en troisième année de psychomotricité à l’ISRP. Chaque année un nouveau PEA et pour ma dernière année je suis arrivée ici !
-    J’ai donc décidé de rejoindre ce projet et j’espère pouvoir être à la hauteur pour le concrétiser.
-    ---
-
-    ---
-
-    ![mot](/PEA--autisme-et-loisirs/images/photo-laurine.png)
-    Laurine, actuellement en deuxième année de psychomotricité à l’ISRP Paris. J’ai rejoint cette aventure un peu folle avec beaucoup d’enthousiasme ! C’est une belle opportunité d’apprendre tout en participant à un projet qui a du sens.
-    ---
-
-    ---
-    Guilien, étudiant en troisième année à l’ISRP. Ça fait 3 ans que je suis dans ce PEA. Curieux d’apprendre, je souhaite m’impliquer dans ce projet qui a du sens. Chaque nouvelle expérience est pour moi une occasion de progresser et d’apporter ma contribution.
-    ---
-    <div class="hero min-h-fit bg-gradient-to-r from-cyan-500 to-blue-500">
-        <div class="hero-content flex-col lg:flex-row">
-            <img src="https://th.bing.com/th/id/OIG3.kuPi9VoV8ulPvXa9Lz_C?w=1024&h=1024&rs=1&pid=ImgDetMain"
-                 class="max-w-sm rounded-lg shadow-2xl"/>
-            <div>
-                <h1 class="text-5xl font-bold">Box Office News!</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            </div>
+    <div class="flex min-h-fit">
+        <!--div class="basis-3/4 rounded-xl m-10 p-5 bg-gradient-to-r from-blue-500 to-teal-300"-->
+        <div class="basis-3/4 rounded-xl m-10 p-5 from-blue-500 to-teal-300">
+            <p>Marine, étudiante en troisième année de psychomotricité à l’ISRP.<br>À l’initiative de ce site et à engager
+                des gens assez fou pour me suivre mes idées un peu dingue</p>
+        </div>
+        <div class="basis-1/4">
+            <img class="masked-image" src="/PEA--autisme-et-loisirs/images/photo-marine.png">
         </div>
     </div>
 
-    <div class="hero min-h-fit bg-gradient-to-r from-sky-500 to-indigo-500">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="https://th.bing.com/th/id/OIG3.tAZIxfp0ZfUKFugYsFkp?pid=ImgGn"
-                 class="max-w-sm rounded-lg shadow-2xl"/>
-            <div>
-                <h1 class="text-5xl font-bold">Box Office News!</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            </div>
+    <div class="flex">
+        <div class="basis-1/4">
+            <img class="masked-image" src="https://api.warriordudimanche.net/avatomic/?str=aurelie">
+        </div>
+        <div class="basis-3/4 rounded-xl m-10 p-5 min-h-fit from-blue-500 to-teal-300">
+            <p>Aurélie, étudiante en 1ère année de Psychomotricité à l’ISRP Paris, je viens tout juste de rejoindre l’équipe&nbsp;! Ce
+                qui me passionne dans la vie, ce sont les projets passionnants et engagés, le sentiment d’être utile en apportant
+                mon soutien et la pratique régulière du yoga.</p>
         </div>
     </div>
 
-    <div class="hero min-h-fit bg-gradient-to-r from-violet-500 to-fuchsia-500">
-        <div class="hero-content flex-col lg:flex-row">
-            <img src="https://th.bing.com/th/id/OIG3.vgBb0h8tKjvQC5xFHsSD?pid=ImgGn"
-                 class="max-w-sm rounded-lg shadow-2xl"/>
-            <div>
-                <h1 class="text-5xl font-bold">Eolande</h1>
-                <p class="py-6">Passions : Eolande est passionnée par l’exploration des mondes inconnus et la découverte
-                    de nouvelles
-                    espèces de créatures fantastiques. Elle aime aussi la musique des vents qui soufflent à travers les
-                    montagnes de son monde.</p>
-                <p class="py-6">Métier : Eolande est une cartographe dans son monde fantastique, créant des cartes
-                    détaillées des
-                    territoires inexplorés.</p>
-            </div>
+    <div class="flex">
+        <div class="basis-3/4 rounded-xl m-10 p-5 min-h-fit from-blue-500 to-teal-300">
+            <p>Maylis, étudiante en troisième année de psychomotricité à l’ISRP. Je me suis faite embarquée dans cette aventure par
+                Marine. Comme elle le dit je suis assez folle pour réaliser ce site avec toute l’équipe et je me suis investie pour
+                en faire quelque chose de beau. Il est important de lier le quantitatif au qualitatif&nbsp;!</p>
+        </div>
+        <div class="basis-1/4">
+            <img class="masked-image" src="/PEA--autisme-et-loisirs/images/photo-maylis.png">
         </div>
     </div>
 
-    <div class="hero min-h-fit bg-gradient-to-r from-purple-500 to-pink-500">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="https://th.bing.com/th/id/OIG3.SyQEHy094x3NN6cLiU.H?pid=ImgGn"
-                 class="max-w-sm rounded-lg shadow-2xl"/>
-            <div>
-                <h1 class="text-5xl font-bold">Thalion</h1>
-                <p class="py-6">Passions : Thalion est un grand amateur d’artefacts anciens et de légendes
-                    oubliées. Il passe son temps libre à étudier les textes anciens et à restaurer des objets trouvés
-                    lors
-                    de ses voyages.</p>
-                <p class="py-6">Métier : Thalion est un archéologue, déterrant les secrets du passé et apportant la
-                    connaissance à son peuple.</p>
-            </div>
+    <div class="flex">
+        <div class="basis-1/4">
+            <img class="masked-image" src="/PEA--autisme-et-loisirs/images/photo-nolwen.png">
+        </div>
+        <div class="basis-3/4 rounded-xl m-10 p-5 min-h-fit from-blue-500 to-teal-300">
+            <p>Nolwen, étudiante en troisième année de psychomotricité à l’ISRP. Chaque année un nouveau PEA et pour ma dernière
+                année je suis arrivée ici&nbsp;!
+                J’ai donc décidé de rejoindre ce projet et j’espère pouvoir être à la hauteur pour le concrétiser.</p>
         </div>
     </div>
+
+    <div class="flex">
+        <div class="basis-3/4 rounded-xl m-10 p-5 min-h-fit from-blue-500 to-teal-300">
+            <p>Laurine, actuellement en deuxième année de psychomotricité à l’ISRP Paris. J’ai rejoint cette aventure un peu folle
+                avec beaucoup d’enthousiasme ! C’est une belle opportunité d’apprendre tout en participant à un projet qui a du
+                sens.</p>
+        </div>
+        <div class="basis-1/4">
+            <img class="masked-image" src="/PEA--autisme-et-loisirs/images/photo-laurine.png">
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="basis-1/4">
+            <img class="masked-image" src="https://api.warriordudimanche.net/avatomic/?str=guilien">
+        </div>
+        <div class="basis-3/4 rounded-xl m-10 p-5 min-h-fit from-blue-500 to-teal-300">
+            <p>Guilien, étudiant en troisième année à l’ISRP. Ça fait 3 ans que je suis dans ce PEA. Curieux d’apprendre, je
+                souhaite m’impliquer dans ce projet qui a du sens. Chaque nouvelle expérience est pour moi une occasion de
+                progresser et d’apporter ma contribution.</p>
+        </div>
+    </div>
+
 </Page>
