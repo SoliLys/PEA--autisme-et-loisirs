@@ -1,19 +1,37 @@
 ---
-import { Image } from 'astro:assets';
+import {Image} from 'astro:assets';
 import logoImage from "../assets/logo.png";
+import Puzzle from "./Puzzle.astro";
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
 ---
 
 <header>
-    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <div class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/PEA--autisme-et-loisirs/" class="flex items-center">
                 <!-- https://via.placeholder.com/250x250.webp?text=Logo -->
-                <Image src={logoImage} alt="Logo" />
+                <Image src={logoImage} alt="Logo"/>
                 <h1 class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">Autisme et loisirs</h1>
             </a>
         </div>
-        <a href="/PEA--autisme-et-loisirs/" class={currentPath === "PEA--autisme-et-loisirs/" ? "hidden" : ""} >⬅</a>
+    </div>
+    <nav class={currentPath === "PEA--autisme-et-loisirs/" ? "hidden" : "grid grid-cols-6"}>
+        <a href="/PEA--autisme-et-loisirs/" class="p-2 text-base w-28">⬅</a>
+        <a href="/PEA--autisme-et-loisirs/pea" class="p-2 text-base">
+            <Puzzle forme="1" className="w-28 fill-yellow-500"></Puzzle>
+        </a>
+        <a href="/PEA--autisme-et-loisirs/autisme" class="p-2 text-base">
+            <Puzzle forme="2" className="w-28 fill-green-500"></Puzzle>
+        </a>
+        <a href="/PEA--autisme-et-loisirs/orientation" class="p-2 text-base">
+            <Puzzle forme="3" className="w-28 fill-red-500"></Puzzle>
+        </a>
+        <a href="/PEA--autisme-et-loisirs/loisirs" class="p-2 text-base">
+            <Puzzle forme="1" className="w-28 fill-blue-500"></Puzzle>
+        </a>
+        <a href="/PEA--autisme-et-loisirs/psycomotricite" class="p-2 text-base">
+            <Puzzle forme="2" className="w-28 fill-pink-500"></Puzzle>
+        </a>
     </nav>
 </header>
